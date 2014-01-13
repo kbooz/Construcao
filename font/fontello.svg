@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2013 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="mail-alt" unicode="&#xe800;" d="m1000 454v-443q0-37-26-63t-63-27h-822q-36 0-63 27t-26 63v443q25-28 56-49q202-137 278-192q32-24 51-37t53-27t61-13h2q28 0 61 13t53 27t51 37q95 68 278 192q32 22 56 49z m0 164q0-44-27-84t-68-69q-210-146-262-181q-5-4-23-17t-30-22t-29-18t-33-15t-27-5h-2q-12 0-27 5t-33 15t-29 18t-30 22t-23 17q-51 35-147 101t-114 80q-35 23-65 64t-31 77q0 43 23 72t66 29h822q36 0 62-26t27-63z" horiz-adv-x="1000" />
+<glyph glyph-name="facebook" unicode="&#xe805;" d="m500 644l-142 0q-14 0-25-15t-11-37l0-102l178 0l0-148l-178 0l0-442l-170 0l0 442l-152 0l0 148l152 0l0 86q0 94 59 159t147 65l142 0l0-156z" horiz-adv-x="500" />
+<glyph glyph-name="tumblr" unicode="&#xe801;" d="m560-58q-48-26-106-40q-48-12-102-12q-58 0-110 16q-54 20-82 46q-36 32-46 64q-14 30-14 96l0 322l-100 0l0 130q54 18 92 50t62 80q24 52 30 116l130 0l0-232l216 0l0-144l-216 0l0-236q0-84 8-102q10-24 32-36q28-20 68-20q68 0 138 46l0-144z" horiz-adv-x="560" />
+<glyph glyph-name="like" unicode="&#xe804;" d="m0-63l0 552q0 16 10 25t25 11l147 0q33 0 35-36l0-552q0-14-10-24t-25-12l-147 0q-13 0-23 10t-12 26z m277 27l0 500q0 22 14 35t37 16l113 0l114 252q13 31 41 31q37 2 93-61q18-25 25-55t6-48t-9-64t-10-55l248 0q26 0 38-17t11-44l-70-429q-12-42-53-74t-88-38l-459 0q-21 0-35 14t-16 37z" horiz-adv-x="998" />
+</font>
+</defs>
+</svg>

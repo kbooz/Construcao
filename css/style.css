@@ -1,0 +1,512 @@
+/**
+ *
+ * FontFace
+ *
+ **/
+ @font-face {
+ 	font-family: 'Patrick Hand SC';
+ 	font-style: normal;
+ 	font-weight: 400;
+ 	src: local('Patrick Hand SC'), local('PatrickHandSC-Regular'), url(http://themes.googleusercontent.com/static/fonts/patrickhandsc/v1/OYFWCgfCR-7uHIovjUZXsfyANVbuiJM3Q3GKGSGeYMA.woff) format('woff');
+ }
+
+/*===================================
+=            Social Font            =
+===================================*/
+@font-face {
+	font-family: 'Fontello';
+	src: url('../font/fontello.eot?3037965');
+	src: url('../font/fontello.eot?3037965#iefix') format('embedded-opentype'), url('../font/fontello.woff?3037965') format('woff'), url('../font/fontello.ttf?3037965') format('truetype'), url('../font/fontello.svg?3037965#fontello') format('svg');
+	src: url('../font/fontello.ttf?3037965') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.symbol,a.symbol:before {
+	font-family: 'Fontello';
+	text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
+}
+
+/*-----------*/
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Patrick Hand SC';
+	overflow:hidden;
+	background-image: -webkit-radial-gradient(ellipse farthest-corner, Transparent 20%, rgba(0,0,0,0.7) 150%), url("../img/bg.jpg");
+	background-image: -moz-radial-gradient(ellipse farthest-corner, Transparent 20%, rgba(0,0,0,0.7) 150%), url("../img/bg.jpg");
+	background-image: -o-radial-gradient(ellipse farthest-corner, Transparent 20%, rgba(0,0,0,0.7) 150%), url("../img/bg.jpg");
+	background-image: -ms-radial-gradient(ellipse farthest-corner, Transparent 20%, rgba(0,0,0,0.7) 150%), url("../img/bg.jpg");
+	background-image: radial-gradient(ellipse farthest-corner, Transparent 20%, rgba(0,0,0,0.7) 150%), url("../img/bg.jpg");
+	margin: 20px;
+	color: white;
+}
+
+.logo {
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
+	margin-bottom: 30px;
+	background-image: -webkit-radial-gradient(ellipse farthest-side, #2c76ba 0%, rgba(44,119,187,0) 100%);
+	background-image: -moz-radial-gradient(ellipse farthest-side, #2c76ba 0%, rgba(44,119,187,0) 100%);
+	background-image: -o-radial-gradient(ellipse farthest-side, #2c76ba 0%, rgba(44,119,187,0) 100%);
+	background-image: -ms-radial-gradient(ellipse farthest-side, #2c76ba 0%, rgba(44,119,187,0) 100%);
+	background-image: radial-gradient(ellipse farthest-side, #2c76ba 0%, rgba(44,119,187,0) 100%);
+	max-height: 440px;
+	max-width: 557px;
+	height: 100%;
+	width: 100%;
+}
+
+.bold{font-weight: 700;}
+
+
+.logo span {
+	display: block;
+
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-image: url(../img/logo.png);
+	max-height: 440px;
+	max-width: 557px;
+	padding-top: 78.99%;
+}
+
+.links {
+	position: relative;
+	display: inline-block;
+	padding: 0 0 50px 0;
+	background-image: -webkit-linear-gradient(to bottom, #fff7d2 0%, #e6d786 100%);
+	background-image: -webkit-linear-gradient(bottom, #e6d786, #fff7d2);
+	background-image: -moz-linear-gradient(to bottom, #fff7d2 0%, #e6d786 100%);
+	background-image: -o-linear-gradient(to bottom, #fff7d2 0%, #e6d786 100%);
+	background-image: -ms-linear-gradient(to bottom, #fff7d2 0%, #e6d786 100%);
+	background-image: linear-gradient(to bottom, #fff7d2 0%, #e6d786 100%);
+	border-top-right-radius: 2px 2px;
+	border-top-left-radius: 2px 2px;
+	border-bottom-right-radius: 5px 20px;
+	border-bottom-left-radius: 20px 5px;
+	max-width: 400px;
+	color: black;
+}
+
+.links>header
+{
+	background-color: #fff6aa;
+	height: 30px;
+
+}
+
+.links>article
+{
+	padding: 0 10%;
+}
+
+.links>article>h1 {
+	font-size: 2.5em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.links:before,.links:after {
+	z-index: -1;
+	position: absolute;
+	content: "";
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	top: 80%;
+	max-width: 300px;
+	background: rgba(0,0,0,0.5);
+
+	-webkit-box-shadow: 0 15px 10px rgba(16,47,75,0.7);
+	box-shadow: 0 15px 10px rgba(16,47,75,0.7);
+
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+.links:after {
+	right: 10px;
+	left: auto;
+
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+
+/**
+*
+* ATUALIZAÇÃO
+*
+*	UTILIZAR '>' Hierarquia NÃO É UMA BOA PRÁTICA
+*
+**/
+
+
+.links>article>p {
+	margin: 0;
+	font-size: 1.4em;
+}
+
+.links>article>ul {
+	display: block;
+	padding: 5% 0 0 0;
+	margin: 0;
+	width: 100%;
+}
+
+.links>article>ul>li {
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	float: left;
+	padding: 0;
+	margin: 0;
+	font-size: 4em;
+}
+
+.links>article>ul>li>a {
+	text-decoration: none;
+	color: rgb(44,119,187);
+}
+
+.footer>p {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+.footer {
+	margin: 15px 0 15px 0;
+	padding-bottom: 15px;
+}
+
+
+@keyframes "spaceboots" {
+	0% {
+		-webkit-transform: translate(2px, 1px) rotate(0deg);
+		-moz-transform: translate(2px, 1px) rotate(0deg);
+		-o-transform: translate(2px, 1px) rotate(0deg);
+		-ms-transform: translate(2px, 1px) rotate(0deg);
+		transform: translate(2px, 1px) rotate(0deg);
+	}
+	10% {
+		-webkit-transform: translate(-1px, -2px) rotate(-5deg);
+		-moz-transform: translate(-1px, -2px) rotate(-5deg);
+		-o-transform: translate(-1px, -2px) rotate(-5deg);
+		-ms-transform: translate(-1px, -2px) rotate(-5deg);
+		transform: translate(-1px, -2px) rotate(-5deg);
+	}
+	20% {
+		-webkit-transform: translate(-3px, 0px) rotate(5deg);
+		-moz-transform: translate(-3px, 0px) rotate(5deg);
+		-o-transform: translate(-3px, 0px) rotate(5deg);
+		-ms-transform: translate(-3px, 0px) rotate(5deg);
+		transform: translate(-3px, 0px) rotate(5deg);
+	}
+	30% {
+		-webkit-transform: translate(0px, 2px) rotate(0deg);
+		-moz-transform: translate(0px, 2px) rotate(0deg);
+		-o-transform: translate(0px, 2px) rotate(0deg);
+		-ms-transform: translate(0px, 2px) rotate(0deg);
+		transform: translate(0px, 2px) rotate(0deg);
+	}
+	40% {
+		-webkit-transform: translate(1px, -1px) rotate(5deg);
+		-moz-transform: translate(1px, -1px) rotate(5deg);
+		-o-transform: translate(1px, -1px) rotate(5deg);
+		-ms-transform: translate(1px, -1px) rotate(5deg);
+		transform: translate(1px, -1px) rotate(5deg);
+	}
+	50% {
+		-webkit-transform: translate(-1px, 2px) rotate(-5deg);
+		-moz-transform: translate(-1px, 2px) rotate(-5deg);
+		-o-transform: translate(-1px, 2px) rotate(-5deg);
+		-ms-transform: translate(-1px, 2px) rotate(-5deg);
+		transform: translate(-1px, 2px) rotate(-5deg);
+	}
+	60% {
+		-webkit-transform: translate(-3px, 1px) rotate(0deg);
+		-moz-transform: translate(-3px, 1px) rotate(0deg);
+		-o-transform: translate(-3px, 1px) rotate(0deg);
+		-ms-transform: translate(-3px, 1px) rotate(0deg);
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		-webkit-transform: translate(2px, 1px) rotate(-5deg);
+		-moz-transform: translate(2px, 1px) rotate(-5deg);
+		-o-transform: translate(2px, 1px) rotate(-5deg);
+		-ms-transform: translate(2px, 1px) rotate(-5deg);
+		transform: translate(2px, 1px) rotate(-5deg);
+	}
+	80% {
+		-webkit-transform: translate(-1px, -1px) rotate(5deg);
+		-moz-transform: translate(-1px, -1px) rotate(5deg);
+		-o-transform: translate(-1px, -1px) rotate(5deg);
+		-ms-transform: translate(-1px, -1px) rotate(5deg);
+		transform: translate(-1px, -1px) rotate(5deg);
+	}
+	90% {
+		-webkit-transform: translate(2px, 2px) rotate(0deg);
+		-moz-transform: translate(2px, 2px) rotate(0deg);
+		-o-transform: translate(2px, 2px) rotate(0deg);
+		-ms-transform: translate(2px, 2px) rotate(0deg);
+		transform: translate(2px, 2px) rotate(0deg);
+	}
+	100% {
+		-webkit-transform: translate(1px, -2px) rotate(-5deg);
+		-moz-transform: translate(1px, -2px) rotate(-5deg);
+		-o-transform: translate(1px, -2px) rotate(-5deg);
+		-ms-transform: translate(1px, -2px) rotate(-5deg);
+		transform: translate(1px, -2px) rotate(-5deg);
+	}
+
+}
+
+@-moz-keyframes spaceboots {
+	0% {
+		-moz-transform: translate(2px, 1px) rotate(0deg);
+		transform: translate(2px, 1px) rotate(0deg);
+	}
+	10% {
+		-moz-transform: translate(-1px, -2px) rotate(-5deg);
+		transform: translate(-1px, -2px) rotate(-5deg);
+	}
+	20% {
+		-moz-transform: translate(-3px, 0px) rotate(5deg);
+		transform: translate(-3px, 0px) rotate(5deg);
+	}
+	30% {
+		-moz-transform: translate(0px, 2px) rotate(0deg);
+		transform: translate(0px, 2px) rotate(0deg);
+	}
+	40% {
+		-moz-transform: translate(1px, -1px) rotate(5deg);
+		transform: translate(1px, -1px) rotate(5deg);
+	}
+	50% {
+		-moz-transform: translate(-1px, 2px) rotate(-5deg);
+		transform: translate(-1px, 2px) rotate(-5deg);
+	}
+	60% {
+		-moz-transform: translate(-3px, 1px) rotate(0deg);
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		-moz-transform: translate(2px, 1px) rotate(-5deg);
+		transform: translate(2px, 1px) rotate(-5deg);
+	}
+	80% {
+		-moz-transform: translate(-1px, -1px) rotate(5deg);
+		transform: translate(-1px, -1px) rotate(5deg);
+	}
+	90% {
+		-moz-transform: translate(2px, 2px) rotate(0deg);
+		transform: translate(2px, 2px) rotate(0deg);
+	}
+	100% {
+		-moz-transform: translate(1px, -2px) rotate(-5deg);
+		transform: translate(1px, -2px) rotate(-5deg);
+	}
+
+}
+
+@-webkit-keyframes "spaceboots" {
+	0% {
+		-webkit-transform: translate(2px, 1px) rotate(0deg);
+		transform: translate(2px, 1px) rotate(0deg);
+	}
+	10% {
+		-webkit-transform: translate(-1px, -2px) rotate(-5deg);
+		transform: translate(-1px, -2px) rotate(-5deg);
+	}
+	20% {
+		-webkit-transform: translate(-3px, 0px) rotate(5deg);
+		transform: translate(-3px, 0px) rotate(5deg);
+	}
+	30% {
+		-webkit-transform: translate(0px, 2px) rotate(0deg);
+		transform: translate(0px, 2px) rotate(0deg);
+	}
+	40% {
+		-webkit-transform: translate(1px, -1px) rotate(5deg);
+		transform: translate(1px, -1px) rotate(5deg);
+	}
+	50% {
+		-webkit-transform: translate(-1px, 2px) rotate(-5deg);
+		transform: translate(-1px, 2px) rotate(-5deg);
+	}
+	60% {
+		-webkit-transform: translate(-3px, 1px) rotate(0deg);
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		-webkit-transform: translate(2px, 1px) rotate(-5deg);
+		transform: translate(2px, 1px) rotate(-5deg);
+	}
+	80% {
+		-webkit-transform: translate(-1px, -1px) rotate(5deg);
+		transform: translate(-1px, -1px) rotate(5deg);
+	}
+	90% {
+		-webkit-transform: translate(2px, 2px) rotate(0deg);
+		transform: translate(2px, 2px) rotate(0deg);
+	}
+	100% {
+		-webkit-transform: translate(1px, -2px) rotate(-5deg);
+		transform: translate(1px, -2px) rotate(-5deg);
+	}
+
+}
+
+@-ms-keyframes "spaceboots" {
+	0% {
+		-ms-transform: translate(2px, 1px) rotate(0deg);
+		transform: translate(2px, 1px) rotate(0deg);
+	}
+	10% {
+		-ms-transform: translate(-1px, -2px) rotate(-5deg);
+		transform: translate(-1px, -2px) rotate(-5deg);
+	}
+	20% {
+		-ms-transform: translate(-3px, 0px) rotate(5deg);
+		transform: translate(-3px, 0px) rotate(5deg);
+	}
+	30% {
+		-ms-transform: translate(0px, 2px) rotate(0deg);
+		transform: translate(0px, 2px) rotate(0deg);
+	}
+	40% {
+		-ms-transform: translate(1px, -1px) rotate(5deg);
+		transform: translate(1px, -1px) rotate(5deg);
+	}
+	50% {
+		-ms-transform: translate(-1px, 2px) rotate(-5deg);
+		transform: translate(-1px, 2px) rotate(-5deg);
+	}
+	60% {
+		-ms-transform: translate(-3px, 1px) rotate(0deg);
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		-ms-transform: translate(2px, 1px) rotate(-5deg);
+		transform: translate(2px, 1px) rotate(-5deg);
+	}
+	80% {
+		-ms-transform: translate(-1px, -1px) rotate(5deg);
+		transform: translate(-1px, -1px) rotate(5deg);
+	}
+	90% {
+		-ms-transform: translate(2px, 2px) rotate(0deg);
+		transform: translate(2px, 2px) rotate(0deg);
+	}
+	100% {
+		-ms-transform: translate(1px, -2px) rotate(-5deg);
+		transform: translate(1px, -2px) rotate(-5deg);
+	}
+
+}
+
+@-o-keyframes "spaceboots" {
+	0% {
+		-o-transform: translate(2px, 1px) rotate(0deg);
+		transform: translate(2px, 1px) rotate(0deg);
+	}
+	10% {
+		-o-transform: translate(-1px, -2px) rotate(-5deg);
+		transform: translate(-1px, -2px) rotate(-5deg);
+	}
+	20% {
+		-o-transform: translate(-3px, 0px) rotate(5deg);
+		transform: translate(-3px, 0px) rotate(5deg);
+	}
+	30% {
+		-o-transform: translate(0px, 2px) rotate(0deg);
+		transform: translate(0px, 2px) rotate(0deg);
+	}
+	40% {
+		-o-transform: translate(1px, -1px) rotate(5deg);
+		transform: translate(1px, -1px) rotate(5deg);
+	}
+	50% {
+		-o-transform: translate(-1px, 2px) rotate(-5deg);
+		transform: translate(-1px, 2px) rotate(-5deg);
+	}
+	60% {
+		-o-transform: translate(-3px, 1px) rotate(0deg);
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		-o-transform: translate(2px, 1px) rotate(-5deg);
+		transform: translate(2px, 1px) rotate(-5deg);
+	}
+	80% {
+		-o-transform: translate(-1px, -1px) rotate(5deg);
+		transform: translate(-1px, -1px) rotate(5deg);
+	}
+	90% {
+		-o-transform: translate(2px, 2px) rotate(0deg);
+		transform: translate(2px, 2px) rotate(0deg);
+	}
+	100% {
+		-o-transform: translate(1px, -2px) rotate(-5deg);
+		transform: translate(1px, -2px) rotate(-5deg);
+	}
+
+}
+
+.shake:hover,.shake:focus,.shake:active {
+	-webkit-animation-name: spaceboots;
+	-moz-animation-name: spaceboots;
+	-ms-animation-name: spaceboots;
+	-o-animation-name: spaceboots;
+	animation-name: spaceboots;
+	animation-duration: 0.2s;
+
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
+	-o-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+
+.shake {
+	display: inline-block;
+}
+
+/*======================================
+=            Responsividade            =
+======================================*/
+@media all and (max-width: 730px) {
+	.links>article>ul>li {
+		display: block;
+		width: 100%;
+		font-size: 3em;
+	}
+
+}
